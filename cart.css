@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+}
+
+:root {
+    --gold: #f99c15;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav.nav {
+    width: 100%;
+    height: 80px;
+    padding: 8px 80px;
+    /* background-color: #eee; */
+    /* border-bottom: 1px solid #eee; */
+    /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); */
+    /* position: fixed; */
+    /* background-color: #fff; */
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    color: #eee;
+}
+
+.links ul {
+    gap: 20px;
+}
+
+.icon a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon a img {
+    width: 80%;
+}
+
+.icon li:nth-child(3) a img {
+    width: 60%;
+}
+
+.icon ul {
+    gap: 15px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header {
+    height: 60vh;
+    /* background-color: #eee; */
+    padding: 120px 80px;
+    /* padding-top: ; */
+}
+/* 
+.bg_1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/bgs/bg1.png);
+    background-size: cover;
+    background-position: center right;
+} */
+
+.myHeadO {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/bgs/bg1.png);
+    background-size: cover;
+    background-position: center right;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #eee;
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+h1.smaller {
+    font-size: 3rem;
+}
+
+header p {
+    color: #eee;
+    font-size: 1.3rem;
+    margin: 40px 0;
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+header .btn {
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.07);
+}
+
+.btn {
+    background-color: var(--gold);
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ctn {
+    position: relative;
+}
+
+.cart {
+    padding: 80px 80px 240px 80px;
+    min-height: 40vh;
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-gap: 30px;
+}
+
+.product {
+    background-image: url(./images/1.jpg);
+    background-color: rgba(245, 245, 245, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow .3s;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.abt {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.abt p {
+    font-size: 1.2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.abt .img {
+    width: 150px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.product:hover {
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
+}
+
+.cnge {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.numb {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.plus, .mins {
+    cursor: pointer;
+    /* padding: 8px 12px; */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--gold);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    user-select: none;
+}
+
+.remv {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #eee;
+    user-select: none;
+}
+
+.cart > p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3rem;
+    opacity: .8;
+    font-weight: 500;
+}
+
+.ctrls {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+.fade_out {
+    transition: all .5s;
+    opacity: 0;
+}
